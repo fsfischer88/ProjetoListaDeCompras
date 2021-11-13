@@ -36,5 +36,8 @@ while cont != qt_alunos:
     media = (sum(notas)) / qt_notas
     dict_turma[nome] = media
 
-    print(dict_turma)
+    list_alunos = dict_turma.keys()
+
+    for aluno in list_alunos:
+        print("O aluno: " + aluno + "Possui a média: " + str(dict_turma[aluno]))
 
